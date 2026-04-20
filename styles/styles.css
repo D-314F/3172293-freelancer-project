@@ -104,7 +104,6 @@ html{
 .navbar__list{
     display: flex;
     flex-direction: column;
-    padding: 24px 0;
     width: 100%;
     margin: 0 auto;
     list-style: none;
@@ -117,7 +116,7 @@ html{
     align-items: center;
     text-decoration: none;
     color: var(--white);
-    padding: 4px 0;
+    /* padding: 4px 0; */
 }
 
 @media (width > 768px) {
@@ -126,6 +125,7 @@ html{
     flex-direction: row;
     gap: 40px;
     justify-content: space-evenly;
+    align-items: center;
    }
 
    .navbar__link:hover{
@@ -144,5 +144,14 @@ body{
     top: 0;
     width: 100%;
     z-index: 100;
+}
+
+.navbar__link.active {
+    background-color:var(--white);
+    color: var(--primary-950);
+    font-weight: bold;
+    padding: 8px 24px;
+    /* border-radius: 0.6rem; */
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 
